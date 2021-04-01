@@ -9,7 +9,7 @@ class Api::V1::RacesController < ApplicationController
     def create
         race = Race.new(race_params)
         if race.save
-            render json: race, status: :accepted
+            render json: RaceSerializer.new(races), status: :accepted
         else 
             render json: { errors: race.errors.full_messages }, status: :unprocessable_entity
         end
