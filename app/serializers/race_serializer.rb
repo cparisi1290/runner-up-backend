@@ -1,4 +1,4 @@
 class RaceSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :name, :description, :city, :state, :distance, :image_url, :theme_id, :theme, :race_date
 end
