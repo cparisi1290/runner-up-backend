@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Theme.destroy_all
+Race.destroy_all
 
 zoombie = Theme.create(name: "Zombie")
 mud = Theme.create(name: "Mud")
