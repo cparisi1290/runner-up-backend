@@ -3,7 +3,8 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :races, only: [:index]
+      resources :races, only: [:index, :create]
+      resources :themes, only: [:index]
     end
   end
 end
